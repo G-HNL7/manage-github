@@ -1,13 +1,11 @@
 locals {
-  tags = {
-    managed_by = "Terraform"
-    platform   = "GitHub"
-
-  }
 
   repositories = yamldecode(
-    file("${path.module}/catalogs/repositories.yaml")
+    file("${path.module}/catalog/repositories.yaml")
   ).repositories
 
+  label_profiles = yamldecode(
+    file("${path.module}/catalog/labels.yaml")
+  ).labels
 
 }

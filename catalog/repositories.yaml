@@ -1,6 +1,6 @@
 repositories:
   manage-github:
-    description: Internal Github Repository for manage Repositories
+    description: GitHub Platform managed with Terraform
     visibility: public
     auto_init: true
     has_issues: true
@@ -15,5 +15,8 @@ repositories:
     license_template: apache-2.0
     topics:
       - terraform
-      - infra
+      - github
       - manage-github
+      - infra
+
+    labels: enterprise

@@ -1,0 +1,33 @@
+labels:
+  enterprise:
+    security:
+      color: "b60205"
+      description: Security issue
+
+    technical-debt:
+      color: "fbca04"
+      description: Technical debt
+
+    architecture:
+      color: "5319e1"
+      description: Architecture decision
+
+    platform:
+      color: "0e8a16"
+      description: Platform related
+
+    blocked:
+      color: "d93f0b"
+      description: Work blocked
+
+    priority:p1:
+      color: "b60205"
+      description: Critical priority
+
+    priority:p2:
+      color: "fbca04"
+      description: High priority
+
+    priority:p3:
+      color: "0e8a16"
+      description: Normal priority
