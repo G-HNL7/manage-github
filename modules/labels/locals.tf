@@ -1,3 +1,9 @@
 locals {
-  selected_profile = var.labels[var.profile]
+  selected_profiles = merge([
+    for profile in var.labels_profiles : lookup(
+      var.labels,
+      profile,
+      {}
+    )
+  ]...)
 }
