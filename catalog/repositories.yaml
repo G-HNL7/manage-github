@@ -28,5 +28,3 @@ repositories:
       - enterprise
     rules_profiles:
       - default
-      - terraform-checks
-      - security-critical

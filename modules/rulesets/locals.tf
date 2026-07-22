@@ -2,7 +2,7 @@
 locals {
   selected_rules_profiles = length(var.rules_profiles) > 0 ? merge([
     for profile in var.rules_profiles : var.rules[profile]
-  ]...) : {
+    ]...) : {
     rules = {
       deletion                = true
       non_fast_forward        = true
