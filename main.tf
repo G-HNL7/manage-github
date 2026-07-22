@@ -17,17 +17,6 @@ module "labels" {
     module.repositories
   ]
 }
-module "branch_protection" {
-  source                     = "./modules/branch_protection"
-  for_each                   = local.repositories
-  repository                 = each.key
-  branch_protection_profiles = lookup(each.value, "branch_protection_profiles", [])
-  branch_protections         = local.branch_protections
-  depends_on = [
-    module.repositories
-  ]
-
-}
 
 module "rulesets" {
   source            = "./modules/rulesets"
