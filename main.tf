@@ -13,9 +13,20 @@ module "labels" {
   labels_profiles = lookup(each.value, "labels_profiles", "")
   labels          = local.labels
 
+}
+
+module "rulesets" {
+  source            = "./modules/rulesets"
+  for_each          = local.repositories
+  repository        = each.key
+  rulesets_profiles = lookup(each.value, "rulesets_profiles", [])
+  rulesets          = local.rulesets
+  rules_profiles    = lookup(each.value, "rules_profiles", [])
+  rules             = local.rules
   depends_on = [
     module.repositories
   ]
+
 }
 
 module "rulesets" {
