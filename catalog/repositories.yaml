@@ -19,4 +19,14 @@ repositories:
       - manage-github
       - infra
 
-    labels: enterprise
+    labels_profiles:
+      - enterprise
+      - ci
+    branch_protection_profiles:
+      - enterprise
+    rulesets_profiles:
+      - enterprise
+    rules_profiles:
+      - default
+      - terraform-checks
+      - security-critical

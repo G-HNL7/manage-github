@@ -31,3 +31,23 @@ labels:
     priority:p3:
       color: "0e8a16"
       description: Normal priority
+  ci:
+    terraform:
+      color: "006b75"
+      description: Terraform related
+
+    github-actions:
+      color: "1d76db"
+      description: GitHub Actions related
+  cloud:
+    aws:
+      color: "0052cc"
+      description: AWS related
+
+    azure:
+      color: "008672"
+      description: Azure related
+
+    gcp:
+      color: "0e8a16"
+      description: GCP related
