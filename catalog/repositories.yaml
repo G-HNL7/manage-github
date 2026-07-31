@@ -28,3 +28,32 @@ repositories:
       - enterprise
     rules_profiles:
       - default
+  platform-gitops:
+    description: GitOps Platform managed with Kustomization and ArgoCD
+    visibility: public
+    auto_init: true
+    has_issues: true
+    has_projects: false
+    has_wiki: false
+    allow_merge_commit: false
+    allow_squash_merge: true
+    allow_rebase_merge: false
+    delete_branch_on_merge: true
+    archived: false
+    license_template: apache-2.0
+    topics:
+      - platform-gitops
+      - infra
+      - kustomization
+      - argocd
+      - gitops
+
+    labels_profiles:
+      - enterprise
+    branch_protection_profiles:
+      - enterprise
+    rulesets_profiles:
+      - enterprise
+    rules_profiles:
+      - default
+
