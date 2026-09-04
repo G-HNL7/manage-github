@@ -9,7 +9,9 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on:
+      - self-hosted
+      - sonarqube-0
     steps:
       - uses: actions/checkout@v2
         with:
