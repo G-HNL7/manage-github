@@ -11,7 +11,8 @@ jobs:
     name: Build
     runs-on:
       - self-hosted
-      - sonarqube-0
+      - sonarqube
+      - local
     steps:
       - uses: actions/checkout@v2
         with:
